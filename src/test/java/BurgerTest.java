@@ -7,7 +7,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 import praktikum.Bun;
 import praktikum.Burger;
 import praktikum.Ingredient;
-import praktikum.IngredientType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.List;
 import static org.junit.Assert.*;
 import static praktikum.IngredientType.FILLING;
 import static praktikum.IngredientType.SAUCE;
-
 
 @RunWith(MockitoJUnitRunner.class)
 public class BurgerTest {
@@ -64,7 +62,6 @@ public class BurgerTest {
         burger.removeIngredient(1);
         int ingredientSize = burger.ingredients.size();
         assertEquals("invalid number of ingredients", 2, ingredientSize);
-
     }
 
     @Test
